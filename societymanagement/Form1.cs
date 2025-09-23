@@ -41,5 +41,18 @@ namespace societymanagement
         {
 
         }
+
+        private void login_Click(object sender, EventArgs e)
+        {
+            // Create object of the next form
+            DashboardForm dashboard = new DashboardForm();
+
+            // Show the next form
+            dashboard.Show();
+
+            // Hide the current login form (optional)
+            this.Hide();
+        }
+
     }
 }

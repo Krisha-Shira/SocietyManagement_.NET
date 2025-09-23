@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace societymanagement
 {
-    public partial class Form6 : Form
+    public partial class Form8 : Form
     {
-        public Form6()
+        public Form8()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

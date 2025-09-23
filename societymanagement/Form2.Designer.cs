@@ -1,6 +1,6 @@
 ﻿namespace societymanagement
 {
-    partial class Form2
+    partial class DashboardForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,15 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DashboardForm));
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.notice = new System.Windows.Forms.Button();
+            this.main = new System.Windows.Forms.Button();
+            this.account = new System.Windows.Forms.Button();
+            this.member = new System.Windows.Forms.Button();
+            this.profile = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -44,7 +46,7 @@
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.MediumOrchid;
-            this.label2.Location = new System.Drawing.Point(479, 39);
+            this.label2.Location = new System.Drawing.Point(420, 123);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(254, 59);
             this.label2.TabIndex = 1;
@@ -84,69 +86,97 @@
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
-            // button1
+            // notice
             // 
-            this.button1.BackColor = System.Drawing.Color.MediumOrchid;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button1.Location = new System.Drawing.Point(413, 122);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(146, 131);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Notice & Communication";
-            this.button1.UseVisualStyleBackColor = false;
+            this.notice.BackColor = System.Drawing.Color.MediumOrchid;
+            this.notice.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.notice.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.notice.Location = new System.Drawing.Point(413, 201);
+            this.notice.Name = "notice";
+            this.notice.Size = new System.Drawing.Size(146, 131);
+            this.notice.TabIndex = 5;
+            this.notice.Text = "Notice & Communication";
+            this.notice.UseVisualStyleBackColor = false;
+            this.notice.Click += new System.EventHandler(this.notice_Click);
             // 
-            // button2
+            // main
             // 
-            this.button2.BackColor = System.Drawing.Color.MediumOrchid;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button2.Location = new System.Drawing.Point(604, 122);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(146, 131);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "Maintenance &Billing";
-            this.button2.UseVisualStyleBackColor = false;
+            this.main.BackColor = System.Drawing.Color.MediumOrchid;
+            this.main.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.main.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.main.Location = new System.Drawing.Point(604, 201);
+            this.main.Name = "main";
+            this.main.Size = new System.Drawing.Size(146, 131);
+            this.main.TabIndex = 6;
+            this.main.Text = "Maintenance &Billing";
+            this.main.UseVisualStyleBackColor = false;
+            this.main.Click += new System.EventHandler(this.main_Click);
             // 
-            // button3
+            // account
             // 
-            this.button3.BackColor = System.Drawing.Color.MediumOrchid;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button3.Location = new System.Drawing.Point(413, 309);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(146, 131);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "Accounting & Fiance";
-            this.button3.UseVisualStyleBackColor = false;
+            this.account.BackColor = System.Drawing.Color.MediumOrchid;
+            this.account.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.account.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.account.Location = new System.Drawing.Point(413, 369);
+            this.account.Name = "account";
+            this.account.Size = new System.Drawing.Size(146, 131);
+            this.account.TabIndex = 7;
+            this.account.Text = "Accounting & Fiance";
+            this.account.UseVisualStyleBackColor = false;
+            this.account.Click += new System.EventHandler(this.account_Click);
             // 
-            // button4
+            // member
             // 
-            this.button4.BackColor = System.Drawing.Color.MediumOrchid;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button4.Location = new System.Drawing.Point(604, 309);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(146, 131);
-            this.button4.TabIndex = 8;
-            this.button4.Text = "Member & Resident\r\n";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.member.BackColor = System.Drawing.Color.MediumOrchid;
+            this.member.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.member.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.member.Location = new System.Drawing.Point(604, 369);
+            this.member.Name = "member";
+            this.member.Size = new System.Drawing.Size(146, 131);
+            this.member.TabIndex = 8;
+            this.member.Text = "Member & Resident\r\n";
+            this.member.UseVisualStyleBackColor = false;
+            this.member.Click += new System.EventHandler(this.button4_Click);
             // 
-            // Form2
+            // profile
+            // 
+            this.profile.BackColor = System.Drawing.Color.MediumOrchid;
+            this.profile.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.profile.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.profile.Location = new System.Drawing.Point(380, 27);
+            this.profile.Name = "profile";
+            this.profile.Size = new System.Drawing.Size(85, 62);
+            this.profile.TabIndex = 9;
+            this.profile.Text = "profile";
+            this.profile.UseVisualStyleBackColor = false;
+            this.profile.Click += new System.EventHandler(this.profile_Click);
+            // 
+            // label4
+            // 
+            this.label4.Font = new System.Drawing.Font("Microsoft YaHei", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.MediumOrchid;
+            this.label4.Location = new System.Drawing.Point(486, 30);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(254, 59);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "krisha shira";
+            // 
+            // DashboardForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 521);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.profile);
+            this.Controls.Add(this.member);
+            this.Controls.Add(this.account);
+            this.Controls.Add(this.main);
+            this.Controls.Add(this.notice);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Name = "Form2";
+            this.Name = "DashboardForm";
             this.Text = "Form2";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -159,9 +189,11 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button notice;
+        private System.Windows.Forms.Button main;
+        private System.Windows.Forms.Button account;
+        private System.Windows.Forms.Button member;
+        private System.Windows.Forms.Button profile;
+        private System.Windows.Forms.Label label4;
     }
 }

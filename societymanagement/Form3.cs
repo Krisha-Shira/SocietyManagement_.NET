@@ -21,5 +21,21 @@ namespace societymanagement
         {
 
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form2 form2 = new Form2();
+
+            // Show Form3
+            form2.Show();
+
+            // Hide the current form (optional)
+            this.Hide();
+        }
     }
 }
