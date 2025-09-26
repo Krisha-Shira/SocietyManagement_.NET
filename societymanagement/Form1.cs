@@ -54,5 +54,21 @@ namespace societymanagement
             this.Hide();
         }
 
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form0 form7 = new Form0();
+
+            // Show Form3
+            form7.Show();
+
+            // Hide the current form (optional)
+            this.Hide();
+        }
     }
+    
 }

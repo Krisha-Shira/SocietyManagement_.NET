@@ -16,5 +16,16 @@ namespace societymanagement
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DashboardForm form2 = new DashboardForm();
+
+            // Show Form3
+            form2.Show();
+
+            // Hide the current form (optional)
+            this.Hide();
+        }
     }
 }

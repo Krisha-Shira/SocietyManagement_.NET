@@ -38,6 +38,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.login = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -137,11 +139,36 @@
             this.login.UseVisualStyleBackColor = true;
             this.login.Click += new System.EventHandler(this.login_Click);
             // 
+            // label8
+            // 
+            this.label8.Font = new System.Drawing.Font("Microsoft YaHei Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.MediumOrchid;
+            this.label8.Location = new System.Drawing.Point(393, 474);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(254, 33);
+            this.label8.TabIndex = 25;
+            this.label8.Text = "If you have not Account?";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.MediumOrchid;
+            this.button1.Location = new System.Drawing.Point(606, 474);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(135, 30);
+            this.button1.TabIndex = 26;
+            this.button1.Text = "register";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 516);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.login);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -170,6 +197,8 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button login;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button button1;
     }
 }
 

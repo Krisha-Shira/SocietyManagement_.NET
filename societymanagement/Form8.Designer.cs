@@ -42,6 +42,7 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.update = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -83,7 +84,7 @@
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.MediumOrchid;
-            this.label2.Location = new System.Drawing.Point(385, 28);
+            this.label2.Location = new System.Drawing.Point(450, 12);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(254, 59);
             this.label2.TabIndex = 14;
@@ -168,11 +169,24 @@
             this.update.Text = "update";
             this.update.UseVisualStyleBackColor = true;
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.MediumOrchid;
+            this.button1.Location = new System.Drawing.Point(392, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(59, 46);
+            this.button1.TabIndex = 25;
+            this.button1.Text = "<";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form8
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 521);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.update);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
@@ -209,5 +223,6 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Button update;
+        private System.Windows.Forms.Button button1;
     }
 }

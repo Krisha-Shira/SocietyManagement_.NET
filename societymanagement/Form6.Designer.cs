@@ -126,7 +126,7 @@
             this.update.Name = "update";
             this.update.Size = new System.Drawing.Size(135, 46);
             this.update.TabIndex = 17;
-            this.update.Text = "update";
+            this.update.Text = "Delete";
             this.update.UseVisualStyleBackColor = true;
             // 
             // textBox1

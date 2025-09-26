@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace societymanagement
 {
-    public partial class Form7 : Form
+    public partial class Form0 : Form
     {
-        public Form7()
+        public Form0()
         {
             InitializeComponent();
         }
