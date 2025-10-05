@@ -154,9 +154,9 @@
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.MediumOrchid;
-            this.button1.Location = new System.Drawing.Point(606, 474);
+            this.button1.Location = new System.Drawing.Point(622, 468);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(135, 30);
+            this.button1.Size = new System.Drawing.Size(135, 39);
             this.button1.TabIndex = 26;
             this.button1.Text = "register";
             this.button1.UseVisualStyleBackColor = true;
