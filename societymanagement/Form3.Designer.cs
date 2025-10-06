@@ -80,6 +80,7 @@
             this.send.TabIndex = 9;
             this.send.Text = "send";
             this.send.UseVisualStyleBackColor = true;
+            this.send.Click += new System.EventHandler(this.send_Click);
             // 
             // button6
             // 

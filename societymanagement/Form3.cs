@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace societymanagement
 {
@@ -103,5 +104,59 @@ namespace societymanagement
             // Hide the current form (optional)
             this.Hide();
         }
+
+        private void send_Click(object sender, EventArgs e)
+        {
+          
+                string notice = textBox1.Text.Trim();
+
+                if (!string.IsNullOrEmpty(notice))
+                {
+                    bool success = SaveNoticeToDatabase(notice);
+
+                    if (success)
+                    {
+                        MessageBox.Show("Notice sent successfully!");
+                        textBox1.Clear(); // Clear textbox after sending
+                    }
+                    else
+                    {
+                        MessageBox.Show("Failed to send notice.");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Please enter a notice.");
+                }
+            }
+
+        // Function to save notice to database
+        private bool SaveNoticeToDatabase(string notice)
+        {
+            // Replace these with your actual server name and database name
+            string connectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=society;Integrated Security=True;Connect Timeout=30";
+            try
+            {
+                using (SqlConnection conn = new SqlConnection(connectionString))
+                {
+                    conn.Open();
+                    string query = "INSERT INTO notice (notice) VALUES (@notice)";
+                    using (SqlCommand cmd = new SqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@notice", notice);
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+                return true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Database Error: " + ex.Message);
+                return false;
+            }
+        }
     }
+
 }
+    
+
