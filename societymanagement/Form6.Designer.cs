@@ -129,6 +129,7 @@
             this.update.TabIndex = 17;
             this.update.Text = "Delete";
             this.update.UseVisualStyleBackColor = true;
+            this.update.Click += new System.EventHandler(this.update_Click);
             // 
             // textBox1
             // 
@@ -173,6 +174,7 @@
             this.button2.TabIndex = 22;
             this.button2.Text = "Add";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Form6
             // 
